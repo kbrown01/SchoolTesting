@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form projectid="0cde0a90-d859-4567-a215-04d1b584c453" form-administrator="kevin.brown@xportability.com" number="9999999"
+    title="Biology Chapter 7 Final Test">
+    <actions>
+        <action name="burn" type="submit" text="Save"
+            url="http://www.foactive.com/Forms/Service.PDF.Burn.aspx"
+            mode="fillable"/>
+        <action name="flatten" type="submit" text="Print"
+            url="http://www.foactive.com/Forms/Service.PDF.Flatten.aspx"
+            mode="fillable"/>
+        <action name="grade" type="submit" text="Grade"
+            url="http://www.foactive.com/Forms/Service.PDF.Compact.aspx"
+            mode="fillable"/>
+        <action name="final" type="submit" text="Finalize"
+            url="http://www.foactive.com/Forms/Service.PDF.Blank.aspx"
+            mode="compressed"/>
+    </actions>
+    <forminfo>
+        <header1 type="link" url="http://www.renderx.com">RenderX, Inc.</header1>
+        <header2>11th Grade Biology</header2>
+        <header3>The Leader in XML to Print</header3>
+        <header4>Administered to <link nameref="recipientname"/> (<link nameref="email"/>)</header4>
+        <footer1 type="link">http://www.renderx.com</footer1>
+        <footer2 type="page"/>
+        <footer3 type="logo">logo-renderx.svg</footer3>
+    </forminfo>
+    <recipient>
+        <name name="recipientname" hidden="true">Austin Brown</name>
+        <email name="email" hidden="true">austin@xportability.com</email>
+        <essaygrade name="essaygrade" hidden="true"/>
+        <totalgrade name="totalgrade" hidden="true"/>
+    </recipient>
+    <data>
+        <instructions>
+            <para><link nameref="recipientname"/>, this is an open note test. Take your time and do
+                the best you can.</para>
+        </instructions>
+        <buttons button_position="top" button_align="right"/>
+        <section>
+            <title>The Gene Revolution</title>
+            <category>
+                <title>Multiple Choice - Select the <b>One</b> Best Answer</title>
+                <item user="teacher">
+                    <description>Teacher Comments:
+                        <multiline name="teach_comments" height="1.25in" printlines="8"/></description>
+                </item>
+                <item>
+                    <checkbox name="q1" value="false" readonly="true"
+                        calculate="optioncheck('q1','q1choice',5);"/>
+                    <description>Organisms that contain genes from other species are called:
+                            <optiongroup name="q1choice">
+                            <option name="q1_1">Recombinant species</option>
+                            <option name="q1_2">Recombinant organisms</option>
+                            <option name="q1_3">Clones</option>
+                            <option name="q1_4" correct="true">Transgenic organisms</option>
+                            <option name="q1_5">Hybrids</option>
+                        </optiongroup>
+                    </description>
+                </item>
+                <item>
+                    <checkbox name="q2" value="false" readonly="true"
+                        calculate="optioncheck('q2','q2choice',5);"/>
+                    <description>What are the single-stranded ends created by the cutting of piece
+                        of DNA by a restriction enzyme called? <optiongroup name="q2choice">
+                            <option name="q2_1" correct="true">Sticky ends</option>
+                            <option name="q2_2">Base pairs</option>
+                            <option name="q2_3">Tacky ends</option>
+                            <option name="q2_4">Complementary ends</option>
+                            <option name="q2_5">Restriction zones</option>
+                        </optiongroup>
+                    </description>
+                </item>
+                <item>
+                    <checkbox name="q3" value="false" readonly="true"
+                        calculate="optioncheck('q3','q3choice',5);"/>
+                    <description>Which of the following is <b>NOT</b> a means by which bacteria can
+                        gain new genetic material? <optiongroup name="q3choice">
+                            <option name="q3_1">Mutation</option>
+                            <option name="q3_2" correct="true">Organization</option>
+                            <option name="q3_3">Congujation</option>
+                            <option name="q3_4">Transduction</option>
+                            <option name="q3_5">Transformation</option>
+                        </optiongroup>
+                    </description>
+                </item>
+                <item>
+                    <checkbox name="q4" value="false" readonly="true"
+                        calculate="optioncheck('q4','q4choice',5);"/>
+                    <description>Which of the following presents a simple definition of cloning?
+                            <optiongroup name="q4choice">
+                            <option name="q4_1">Self-fertilization</option>
+                            <option name="q4_2">The creation of offspring with similar characteristics to the parent</option>
+                            <option name="q4_3">The creation of a genetically identical offspring via sexual reproduction</option>
+                                <option name="q4_4" correct="true">The creation of a genetically identical copy of an original individual</option>
+                            <option name="q4_5">The creation of at least thousands of offspring from one individual</option>
+                        </optiongroup>
+                    </description>
+                </item>
+                <item>
+                    <checkbox name="q5" value="false" readonly="true"
+                        calculate="optioncheck('q5','q5choice',5);"/>
+                    <description>In which cycle does a virus inject its genetic material into a
+                        bacterial cell, replicate, and then release numerous cloned virus cells,
+                        resulting in the death of the bacterial cell? <optiongroup name="q5choice">
+                            <option name="q5_1">Lysogenic cycle</option>
+                            <option name="q5_2">Krebs cycle</option>
+                            <option name="q5_3">Menstruation cycle</option>
+                            <option name="q5_4">Photosynthetic cycle</option>
+                            <option name="q5_5" correct="true">Lytic cycle</option>
+                        </optiongroup>
+                    </description>
+                </item>
+                <item>
+                    <checkbox name="q6" value="false" readonly="true"
+                        calculate="optioncheck('q6','q6choice',5);"/>
+                    <description>What are plasmids? <optiongroup name="q6choice">
+                            <option name="q6_1">Junk DNA</option>
+                            <option name="q6_2">Long stretches of repeating DNA sequences</option>
+                            <option name="q6_3">DNA enzymes</option>
+                            <option name="q6_4">Strands of genetic material made up of RNA</option>
+                        <option name="q6_5" correct="true">Small, circular segments of DNA</option>
+                        </optiongroup>
+                    </description>
+                </item>
+                <item>
+                    <checkbox name="q7" value="false" readonly="true"
+                        calculate="optioncheck('q7','q7choice',5);"/>
+                    <description>What is the name for the enzyme used to glue together the strands
+                        of DNA in making recombinant DNA? <optiongroup name="q7choice">
+                            <option name="q7_1" correct="true">DNA ligase</option>
+                            <option name="q7_2">DNA gyrase</option>
+                            <option name="q7_3">DNA vaccine</option>
+                            <option name="q7_4">DNA polymerase</option>
+                            <option name="q7_5">DNA splicer</option>
+                        </optiongroup>
+                    </description>
+                </item>
+                <item>
+                    <checkbox name="q8" value="false" readonly="true"
+                        calculate="optioncheck('q8','q8choice',5);"/>
+                    <description>Which of the following is the type of bacterial gene transfer that involves the construction of a bridge between two bacterial cells? 
+                        <optiongroup name="q8choice">
+                        <option name="q8_1">Transformation</option>
+                            <option name="q8_2" correct="true">Conjugation</option>
+                        <option name="q8_3">Transduction</option>
+                            <option name="q8_4">Cytoplasm</option>
+                            <option name="q8_5">Transference</option>
+                        </optiongroup>
+                    </description>
+                </item>
+                <item>
+                    <checkbox name="q9" value="false" readonly="true"
+                        calculate="optioncheck('q9','q9choice',5);"/>
+                    <description>Why might a clone show different physical characteristics than its parent? 
+                        <optiongroup name="q9choice">
+                            <option name="q9_1">The clone receives different genes from another parent</option>
+                            <option name="q9_2" correct="true">The environment influences the clone’s phenotype in a manner different from its parent</option>
+                            <option name="q9_3">Clones are always physically different from their parent</option>
+                            <option name="q9_4">Genes change each generation and thus the clone has different genetic material than it parent</option>
+                            <option name="q9_5">Cloning involves the recombination of genetic material resulting in genetic variation</option>
+                        </optiongroup>
+                    </description>
+                </item>
+                <item>
+                    <checkbox name="q10" value="false" readonly="true"
+                        calculate="optioncheck('q10','q10choice',5);"/>
+                    <description>What are the small circular pieces of bacterial DNA commonly used as vectors? 
+                        <optiongroup name="q10choice">
+                            <option name="q10_1" correct="true">Plasmids</option>
+                            <option name="q10_2">Cosmids</option>
+                            <option name="q10_3">Haploids</option>
+                            <option name="q10_4">Diploids</option>
+                            <option name="q10_5">Capsids</option>
+                        </optiongroup>
+                    </description>
+                </item>
+                <item>
+                    <checkbox name="q11" value="false" readonly="true"
+                        calculate="optioncheck('q11','q11choice',5);"/>
+                    <description>Which field of study explores the use of living organisms to perform operations useful to humans?
+                        <optiongroup name="q11choice">
+                            <option name="q11_1">DNA technology</option>
+                            <option name="q11_2" correct="true">Biotechnology</option>
+                            <option name="q11_3">Genetics</option>
+                            <option name="q11_4">DNA manipulation</option>
+                            <option name="q11_5">DNA engineering</option>
+                        </optiongroup>
+                    </description>
+                </item>
+            </category>
+            <category>
+                <title>Essay Questions</title>
+                <item>
+                    <checkbox name="e1" value="false" readonly="true" calculate="autocheck('e1','e1_ans');"/>
+                    <description>Describe the method scientists use to create recombinant DNA.
+                        <multiline name="e1_ans" height="2.25in" printlines="10"/></description>
+                </item>
+                <item user="teacher">
+                    <description>Teacher Comments:
+                        <multiline name="e1t_ans" height="1.25in" printlines="8"/></description>
+                </item>
+                <item>
+                    <checkbox name="e2" value="false" readonly="true" calculate="autocheck('e2','e2_ans');"/>
+                    <description>Describe the process used to clone Dolly the Sheep.
+                        <multiline name="e2_ans" height="2.25in" printlines="10"/></description>
+                </item>
+                <item user="teacher">
+                    <description>Teacher Comments:
+                        <multiline name="e2t_ans" height="1.25in" printlines="8"/></description>
+                </item>
+                <item>
+                    <checkbox name="e3" value="false" readonly="true" calculate="autocheck('e3','e3_ans');"/>
+                    <description>What questions of safety and ethics might arise from the use of biotechnology in gene transfer between organisms?
+                        <multiline name="e3_ans" height="2.25in" printlines="10"/></description>
+                </item>
+                <item user="teacher">
+                    <description>Teacher Comments:
+                        <multiline name="e3t_ans" height="1.25in" printlines="8"/></description>
+                </item>
+            </category>
+        </section>
+    </data>
+</form>

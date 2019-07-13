@@ -23,4 +23,4 @@ The template supports checkbox, optiongroups, comboboxes, textboxes, multiline i
 
 They have some very advanced things including Javascript injection in the PDF and they even inject the source XML into hidden fields so that a test can be “scored” server side, flattened or even regenerated for the teacher to add comments in a different PDF form..
 
-See also the generic exmaple at https://github.com/kbrown01/Checklist
+See also the generic example at https://github.com/kbrown01/Checklist
